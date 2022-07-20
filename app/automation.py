@@ -29,3 +29,9 @@ button_search.click()
 # asserting the instruction was done
 output_search = chrome_browser.find_element(By.CLASS_NAME, 'title')
 assert 'Run tests in parallel with pytest' in output_search.text
+
+# closing chrome window
+# chrome_browser.close()
+
+# quiting webdriver
+chrome_browser.quit()
